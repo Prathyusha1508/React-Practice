@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+
+
+
+import Child from "./components/child";
+import Counter from "./components/counter";
+import Dropdown from "./components/dropdown";
+import Object from "./components/Obj";
+import Parent from "./components/parent";
+import Products from "./components/products";
+import Story from "./components/story";
+import StoryProp from "./components/storyProp";
+import Tasks from "./components/Todo";
+import Uncontrolled from "./components/uncontrolled";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    
+  <Tasks/>
+  <Dropdown/>
+  {/* <Products/> */}
+  <Parent/>
+  <Child/>
+  <Uncontrolled/>
+  <Story/>
+  <StoryProp/>
+  <Object/>
+  <Counter/>
     </div>
   );
 }
